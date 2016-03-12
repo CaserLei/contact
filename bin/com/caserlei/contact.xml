@@ -1,12 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<contactList> 
-  <contact id="1"> 
-    <name>李磊</name>  
-    <gender>男</gender>  
-    <age>23</age>  
-    <phone>2324524</phone>  
-    <email>1341324@qq.com</email>  
-    <qq>43443335</qq> 
-  </contact> 
-</contactList>
+<contactList></contactList>

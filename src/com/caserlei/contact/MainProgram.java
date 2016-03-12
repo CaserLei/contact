@@ -28,24 +28,84 @@ public class MainProgram {
 				if("1".equals(command)){
 					//获取用户输入的数据
 					Contact  contact=null;
+					System.out.println("请输入编号：");
+					String id=br.readLine();
+					
 					//获取姓名
+					System.out.println("请输入姓名：");
 					String name=br.readLine();
+					//获取性别
+					System.out.println("请输入性别：");
+					String gender=br.readLine();
+					
+					//获取年龄
+					System.out.println("请输入年龄：");
+					String age=br.readLine();
+					
+					//获取电话
+					System.out.println("请输入电话号码：");
+					String phone=br.readLine();
+					
+					//获取邮箱
+					System.out.println("请输入邮箱地址：");
+					String email=br.readLine();
+					
+					//获取qq
+					System.out.println("请输入qq：");
+					String qq=br.readLine();
+					
+					contact.setId(id);
 					contact.setName(name);
+					contact.setGender(gender);
+					contact.setAge(Integer.parseInt(age));
+					contact.setPhone(phone);
+					contact.setEmail(email);
+					contact.setQq(qq);
 					
 					
 					operator.addContact(contact);
 				}else if("2".equals(command)){
 					//获取输入的数据
-					Contact contact=null;
-					//获取姓名
+					Contact contact=new Contact();
+					System.out.println("请输入需要修改编号：");
 					String id=br.readLine();
+					
+					//获取姓名
+					System.out.println("请输入修改后姓名：");
 					String name=br.readLine();
+					//获取性别
+					System.out.println("请输入修改后性别：");
+					String gender=br.readLine();
+					
+					//获取年龄
+					System.out.println("请输入修改后年龄：");
+					String age=br.readLine();
+					
+					//获取电话
+					System.out.println("请输入修改后电话号码：");
+					String phone=br.readLine();
+					
+					//获取邮箱
+					System.out.println("请输入修改后邮箱地址：");
+					String email=br.readLine();
+					
+					//获取qq
+					System.out.println("请输入修改后qq：");
+					String qq=br.readLine();
+					
 					contact.setId(id);
 					contact.setName(name);
+					contact.setGender(gender);
+					contact.setAge(Integer.parseInt(age));
+					contact.setPhone(phone);
+					contact.setEmail(email);
+					contact.setQq(qq);
+					
 					operator.updateContact(contact);
 				}else if("3".equals(command)){
 					//删除联系人
 					//获取需要删除的ID
+					System.out.println("请输入删除后的编号：");
 					String id=br.readLine();
 					
 					operator.deleteContact(id);
